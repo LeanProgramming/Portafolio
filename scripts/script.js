@@ -174,7 +174,7 @@ let contact = `
                     </div>
                     <div class="box">
                         <input type="tel" name="tel" id="tel" required>
-                        <label class="text" for="tel">Telefono(opcional)</label>
+                        <label class="text" for="tel">Telefono</label>
                         <span class="line"></span>
                     </div>
                 </div>
