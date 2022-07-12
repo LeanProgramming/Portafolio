@@ -1,0 +1,53 @@
+:root {
+    --bubble1: #4fc3dc;
+    --bubble2: #ff2d75;
+    --shadow1: #4fc3dc44;
+    --shadow2: #ff2d7544;
+}
+
+body {
+    background: var(--bg);
+}
+
+.bubbles_container {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    min-width: 30px;
+    min-height: 30px;
+    background: var(--bubble1);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px var(--shadow1),
+    0 0 50px var(--bubble1),
+    0 0 100px var(--bubble1);
+    animation: animate 15s linear infinite;
+    animation-duration: calc(150s/ var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: var(--bubble2);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px var(--shadow2),
+    0 0 50px var(--bubble2),
+    0 0 100px var(--bubble2);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+}

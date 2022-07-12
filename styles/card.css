@@ -1,0 +1,200 @@
+:root {
+    --html: #e34c26;
+    --html_font_color: #fff;
+    --css: #264de4;
+    --css_font_color: #fff;
+    --js: #f0db4f;
+    --js_font_color: #323330;
+    --java: #3d88c8;
+    --java_font_color: #bc0819;
+    --python: #507294;
+    --python_font_color: #faec4e;
+    --php: #b0b3d6;
+    --ph_font_color: #474aba;
+    --vue: #41b8b3;
+    --vue_font_color: #34495e;
+    --flask:#eee;
+    --flask_font_color: #222;
+    --sql: #00758f;
+    --sql_font_color: #f29111;
+}
+
+.card {
+    width: 320px;
+    height: 450px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.card-img-box {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-box .card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card-body .card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.2em;
+}
+
+.card-body .card-content .card-title {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.card-description {
+    text-align: justify;
+    padding: 0.5em;
+}
+
+.card-body .card-content .tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+.card-footer ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  padding: 0;
+
+}
+
+.card-footer li {
+    list-style: none;
+    margin: 4px;
+}
+
+.card-footer li a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.25em;
+    color: var(--color);
+    text-decoration: none;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-footer li a:hover {
+    background-color: var(--bubble1);
+}
+
+.html::after {
+    content: "HTML";
+    background-color: var(--html);
+    color: var(--html_font_color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.css::after {
+    content: "CSS";
+    background-color: var(--css);
+    color: var(--css_font_color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.js::after {
+    content: "JavaScript";
+    background-color: var(--js);
+    color: var(--js_font_color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.vue::after {
+    content: "Vue";
+    background-color: var(--vue);
+    color: var(--vue_font_color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.python::after {
+    content: "Python";
+    background-color: var(--python);
+    color: var(--python_font_color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.flask::after {
+    content: "Flask";
+    background-color: var(--flask);
+    color: var(--flask_font_color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.java::after {
+    content: "Java";
+    background-color: var(--java);
+    color: var(--java_font_color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.php::after {
+    content: "PHP";
+    background-color: var(--php);
+    color: var(--php_font_color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.sql::after {
+    content: "SQL";
+    background-color: var(--sql);
+    color: var(--sql_font_color);
+    padding: 3px;
+    border-radius: 20px;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 300px;
+        height: 450px;
+    }
+}
