@@ -60,3 +60,17 @@
         height: 200px;
     }
 }
+
+@media (max-width: 300px) {
+    #welcome {
+        font-size: 0.9em;
+    }
+
+    #logo h1 {
+        font-size: 0.8em;
+    }
+
+    #logo h3 {
+        font-size: 0.6em;
+    }
+} 

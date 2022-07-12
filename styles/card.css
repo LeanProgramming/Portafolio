@@ -198,3 +198,9 @@
         height: 450px;
     }
 }
+
+@media (max-width: 300px) {
+    .card {
+        width: 250px;
+    }
+}

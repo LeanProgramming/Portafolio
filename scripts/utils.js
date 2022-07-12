@@ -66,7 +66,6 @@ class Card {
 
 }
 
-lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium optio a quia iusto dignissimos reprehenderit, facere perspiciatis accusamus. Molestias modi iure excepturi, blanditiis iusto animi ducimus. Ut, ipsum id.";
 pages = [
     {
         img: "img/crimi-para-todxs.png",

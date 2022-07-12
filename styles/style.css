@@ -147,13 +147,17 @@ span.mouse_particles::before {
     }
 }
 
-@media (max-width: 900px) {
+@media (min-width: 400px) and (max-width: 900px) {
     #main {
         width: 100%;
-    }    
+    }
+    
+    #footer #inner_footer {
+        font-size: smaller;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .header {
         border-radius: 0 0 100px 100px;
     }
@@ -174,5 +178,9 @@ span.mouse_particles::before {
     
     .divider-icon i {
         padding: 0.5em;
+    }
+
+    #footer #inner_footer {
+        font-size: 0.5em;
     }
 }
