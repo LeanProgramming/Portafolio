@@ -155,7 +155,7 @@ let contact = `
             <div id="contact_title">
                 <h1>Contáctame</h1>
             </div>
-            <form action="munozleandrom96@gmail.com" method="POST" class="form">
+            <form action="mailto:munozleandrom96@gmail.com" method="POST" class="form">
                 <div class="inputBox">
                     <div class="box">
                         <input type="text" name="name" id="name" required>
