@@ -130,7 +130,7 @@ let about = `
             <h3>Desarrollador Full-Stack</h3>
         </div>
         <div id="presentation-photo">
-            <img id="my_photo" src="/img/leandromunoz.JPG" alt="Leandro M Muñoz-Fotografía">
+            <img id="my_photo" src="img/leandromunoz.JPG" alt="Leandro M Muñoz-Fotografía">
         </div>
     </div>
     
@@ -219,7 +219,7 @@ function activeLink() {
         </div>
         <div id="logo">
             <div id="profile-img">
-                <img src="/img/logo.JPG" alt="Index Img">
+                <img src="img/logo.JPG" alt="Index Img">
             </div>
             <h1>Hola, soy Leandro Muñoz</h1>
             <h3>y te doy la bienvenida a mi portafolio virtual</h3>
