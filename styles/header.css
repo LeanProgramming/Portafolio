@@ -39,6 +39,41 @@
     object-fit: cover;
 }
 
+@media (max-width: 752px) {
+    #welcome {
+        position: relative;
+        font-size: 1.4em;
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+
+    #logo h1 {
+        font-size: 1.1em;
+    }
+
+    #logo h3 {
+        font-size: 0.9em;
+    }
+}
+
+
+@media (max-width: 525px) {
+    #welcome {
+        position: relative;
+        font-size: 1em;
+        padding: 0.5em;
+        margin: 0.5em;
+    }
+
+    #logo h1 {
+        font-size: 1em;
+    }
+
+    #logo h3 {
+        font-size: 0.8em;
+    }
+}
+
 @media (max-width: 425px) {
     #welcome {
         position: relative;
@@ -48,11 +83,11 @@
     }
 
     #logo h1 {
-        font-size: 9em;
+        font-size: 1em;
     }
 
     #logo h3 {
-        font-size: 0.6em;
+        font-size: 0.75em;
     }
 
     #profile-img {
@@ -63,14 +98,14 @@
 
 @media (max-width: 300px) {
     #welcome {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 
     #logo h1 {
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
 
     #logo h3 {
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
 } 
