@@ -1,0 +1,210 @@
+@import url(/styles/style.css);
+@import url(/styles/background.css);
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2em;
+    width: 100%;
+    color: var(--color);
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(#ffeb3b, #e91e63);
+    border-radius: 50%;
+    transform: translate(calc(100vw * -0.3), calc(100vh * -0.3));
+    overflow: hidden;
+}
+
+#contact::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#2196f3, #83d8ff);
+    border-radius: 50%;
+    transform: translate(calc(100vw * 0.3), calc(100vh * 0.3));
+   
+}
+
+.formBox {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1000px;
+    padding: 3em;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+}
+
+.formBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -40%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    pointer-events: none;
+    transform: skewX(-15deg);
+}
+
+.formBox h1 {
+    width: 100%;
+    text-align: center;
+    color: var(--color);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.form .inputBox{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+}
+
+.form .box, 
+.form .textAreaBox .box {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+}
+
+.form .box {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 20px;
+}
+
+.form .box input,
+.textAreaBox .box textarea {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 10px;
+    z-index: 1;
+    color: #000;
+}
+
+.box .text {
+    line-height: 30px;
+    font-size: 1em;
+    padding: 0 1em;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+
+.form .inputBox .box input:focus + .text,
+.form .inputBox .box input:valid + .text,
+.form .textAreaBox .box textarea:focus + .text,
+.form .textAreaBox .box textarea:valid + .text  {
+    transform: translate(-30px,-25px);
+}
+
+.form .box .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    min-width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.form .inputBox .box input:focus ~ .line,
+.form .inputBox .box input:valid ~ .line {
+    height: 100%;
+}
+
+.form .textArea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+
+.form .textAreaBox .box textarea:focus ~ .line,
+.form .textAreaBox .box textarea:valid ~ .line {
+    height: 100%;
+}
+
+.form .submitBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .submitBox input[type="submit"] {
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    outline: none;
+    background: rgba(79, 195, 220, 0.1);
+    border-top: 1px solid #fff5;
+    border-left: 1px solid #fff2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    color: var(--color);
+    font-weight: 300;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+@media (min-width: 520px) and (max-width: 920px) {
+    #contact {
+        width: 90%;
+    }
+
+    .formBox {
+        padding: 4em;
+    }
+
+    .formBox h2 {
+        font-size: 28px;
+    }
+
+    .form .inputBox{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    #contact {
+        width: 100%;
+    }
+
+    .formBox {
+        padding: 1em;
+    }
+
+    .form .inputBox{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

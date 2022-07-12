@@ -150,7 +150,47 @@ let about = `
 `;
 
 let contact = `
-<div id="contact"></div>
+<div id="contact">
+        <div class="formBox">
+            <div id="contact_title">
+                <h1>Contáctame</h1>
+            </div>
+            <form action="munozleandrom96@gmail.com" method="POST" class="form">
+                <div class="inputBox">
+                    <div class="box">
+                        <input type="text" name="name" id="name" required>
+                        <label class="text" for="name" >Nombre</label>
+                        <span class="line"></span>
+                    </div>
+                    <div class="box">
+                        <input type="text" name="surname" id="surname" required>
+                        <label class="text" for="surname">Apellido</label>
+                        <span class="line"></span>
+                    </div>
+                    <div class="box">
+                        <input type="email" name="email" id="email" required>
+                        <label class="text" for="email">Email</label>
+                        <span class="line"></span>
+                    </div>
+                    <div class="box">
+                        <input type="tel" name="tel" id="tel" required>
+                        <label class="text" for="tel">Telefono(opcional)</label>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="textAreaBox">
+                    <div class="box">
+                        <textarea name="message" id="message" required></textarea>
+                        <label class="text" for="message">Escriba su mensaje aquí...</label>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="submitBox">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
 `;
 
 navbar_content = 
